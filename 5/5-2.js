@@ -16,23 +16,28 @@ let numbers = [
     'five'
 ];
 
+function stringNum(number) {
+    return numbers[number];
+}
+
+
 // Function declaration
-function stringNum(num) {
-    console.log(`${num} is ${numbers[num]}`);
+function convertNumberDecl(num) {
+    return stringNum(num);
 }
 
 // Function expression
-let stringNumExpression = function (num) {
-    console.log(`${num} : ${numbers[num]}`);
+let convertNumberExpression = function (num) {
+    return stringNum(num);
 };
 
 // Arrow function 
-let stringNumArrow = num => console.log(`${num} = ${numbers[num]}`);
+let convertNumberArrow = num => stringNum(num);
 
 //  //Function call to check the result
-// stringNum(0);
-// stringNumExpression(2);
-// stringNumArrow(5);
+console.log(convertNumberDecl(1));
+console.log(convertNumberExpression(2));
+console.log(convertNumberArrow(3));
 
 
 /*
@@ -42,11 +47,10 @@ let stringNumArrow = num => console.log(`${num} = ${numbers[num]}`);
 // function declaration
 
 
-// function expression
+// // function expression
 
 
 // arrow function 
-
 
 
 
