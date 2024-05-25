@@ -76,7 +76,7 @@ let countCallArr = () => {
     A function that prints the current date and time. Hint: you can get the current date and time with new Date().
 */
 
-let now = new Date();
+let now = new Date().toString();
 
 // function declaration
 function dateDecl() {
