@@ -12,12 +12,18 @@
 
 let myColors = (name, ...favoriteColors) => {
     let colorString = favoriteColors.join(", ");
-
-    console.log(
-        `My name is ${name} and my favorite colors are:
-    ${colorString}.`
-    );
+    let message = '';
+    if (favoriteColors.length > 1) {
+        message = `my favorite colors are: ${colorString}`;
+    } else if (favoriteColors.length == 1) {
+        message = `my favorite colors is ${colorString}`;
+    } else {
+        message = 'I have no favorite color';
+    };
+    console.log(`My name is ${name} and ${message}.`);
 };
 
 
-myColors("Nick", "blue", "green", "orange");
+myColors('Amir', 'blue', 'green');
+myColors('Behzad', 'blue');
+myColors('Amir Behzad');
