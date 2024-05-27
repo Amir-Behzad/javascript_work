@@ -16,5 +16,3 @@ let restFun = function (name, ...favoriteColors) {
 restFun('Amir', 'blue', 'red', 'green');
 restFun('Behzad', 'blue', 'green');
 restFun('Joe');
-
-// Works like a charm! :D And sums up most of the contents of the book up to here.
