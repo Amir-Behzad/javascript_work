@@ -1,4 +1,4 @@
-let restFun = function (name, ...favoriteColors) {
+let restFun = (name, ...favoriteColors) => {
     let favoriteColorsString = favoriteColors.slice(0, -1).join(', ');
     
     if (favoriteColors.length > 1) {
