@@ -1,3 +1,4 @@
+// Array Methods That Take Callbacks
 let shoppingList =  ["Milk", "Sugar", "Banana", "Ice"];
-found = shoppingList.find(item => item[0] === 'B');
+found = shoppingList.filter(item => item.length > 3);
 console.log(found);
