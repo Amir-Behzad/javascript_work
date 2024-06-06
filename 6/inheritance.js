@@ -35,15 +35,15 @@ class Enemy extends Actor {
     }
 }
 
-let player1 = new Player(0, 0);
+// let player1 = new Player(0, 0);
 
-let enemy1 = new Enemy(4, 5);
-console.log(`player1 is at the pisition: (${player1.x}, ${player1.y}). Health level: ${player1.hp}`);
-console.log(`enemy1 is at the pisition: (${enemy1.x}, ${enemy1.y}). Distance to player1: ${enemy1.distanceTo(player1)}`);
-console.log(`enemy1 attacks player1:\n${enemy1.attack(player1)}`);
-player1.move(2, 3);
-console.log(`player1 is moving...\nplayer1 is at the pisition: (${player1.x}, ${player1.y}). Health level: ${player1.hp}`);
-console.log(`enemy1 attacks player1:\n${enemy1.attack(player1)}`);
-// enemy1.attack(player1);
-console.log(`player1 is at the pisition: (${player1.x}, ${player1.y}). Health level: ${player1.hp}`);
+// let enemy1 = new Enemy(4, 5);
+// console.log(`player1 is at the pisition: (${player1.x}, ${player1.y}). Health level: ${player1.hp}`);
+// console.log(`enemy1 is at the pisition: (${enemy1.x}, ${enemy1.y}). Distance to player1: ${enemy1.distanceTo(player1)}`);
+// console.log(`enemy1 attacks player1:\n${enemy1.attack(player1)}`);
+// player1.move(2, 3);
+// console.log(`player1 is moving...\nplayer1 is at the pisition: (${player1.x}, ${player1.y}). Health level: ${player1.hp}`);
+// console.log(`enemy1 attacks player1:\n${enemy1.attack(player1)}`);
+// // enemy1.attack(player1);
+// console.log(`player1 is at the pisition: (${player1.x}, ${player1.y}). Health level: ${player1.hp}`);
 
