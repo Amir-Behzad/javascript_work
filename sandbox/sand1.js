@@ -1,9 +1,21 @@
-function Cat() {
-    
+function Cat(name) {
+    this.name = name;
 }
 
-let pishi = new Cat;
-pishi.name = "Pishi";
+Cat.prototype.purr = function () {
+    console.log(`${this.name} purrs`);
+}
 
-console.log(pishi.name)
-console.log(Cat)
+Cat.prototype.rol = function () {
+    console.log(`${this.name} rols`);
+}
+
+
+Cat.prototype.repeat = function (times, callback) {
+    for (let time = 0; time < times; time++) {
+        callback();
+        console.log(`repeated ${time} time.`)
+    }
+}
+
+let pishi = new Cat('Pishi')
