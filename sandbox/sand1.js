@@ -1,3 +1,5 @@
+// Here Cat is a "constructor function" not a class
+// but does the same job alongside "prototype"
 function Cat(name) {
     this.name = name;
 }
