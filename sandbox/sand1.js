@@ -4,13 +4,17 @@ function Cat(name) {
     this.name = name;
 }
 
+Cat.prototype.sayHello = function () {
+    console.log(`Miao! My name is ${this.name}.`);
+};
+
 Cat.prototype.purr = function () {
     console.log(`${this.name} purrs`);
-}
+};
 
 Cat.prototype.rol = function () {
     console.log(`${this.name} rols`);
-}
+};
 
 
 Cat.prototype.repeat = function (times, callback) {
@@ -18,9 +22,8 @@ Cat.prototype.repeat = function (times, callback) {
         callback();
         console.log(`repeated ${time} time.`)
     }
-}
+};
 
-let pishi = new Cat('Pishi');
 
 class Dog {
     constructor(name) {
@@ -33,3 +36,13 @@ class Dog {
 }
 
 let sonny = new Dog('Sonny');
+let pishi = new Cat('Pishi');
+let moona = new Cat("Moona");
+
+moona.sayHello = function () {
+    console.log(`HELLO!!! I'M ${this.name.toUpperCase()}!`);
+};
+
+moona.sayHello();
+
+pishi.sayHello();
