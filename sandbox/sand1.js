@@ -1,5 +1,5 @@
 // Here Cat is a "constructor function" not a class
-// but does the same job alongside "prototype"
+// but does the same job alongside a "prototype"
 function Cat(name) {
     this.name = name;
 }
@@ -20,4 +20,16 @@ Cat.prototype.repeat = function (times, callback) {
     }
 }
 
-let pishi = new Cat('Pishi')
+let pishi = new Cat('Pishi');
+
+class Dog {
+    constructor(name) {
+        this.name = name;
+    }
+
+    sayHello() {
+        console.log(`Woof! My name is ${this.name}.`);
+    }
+}
+
+let sonny = new Dog('Sonny');
