@@ -22,8 +22,22 @@ Cat.prototype.sayHello = function () {
 };
 
 
+let kiki = new Cat('Kiki');
+let felix = new Dog('Felix');
+
+kiki.sayHello();
+felix.sayHello();
+
 let moona = new Cat('Moona');
 let yappy = new Dog('Yappy');
-moona.sayHello();
-yappy.sayHello();
 
+moona.sayHello = function () {
+    console.log(`HELLO!!! i'M ${this.name.toUpperCase()}! `);
+};
+
+yappy.sayHello = function () {
+    console.log(`Yup! This is ${this.name} B)`);
+};
+
+moona.sayHello();
+yappy.sayHello()
