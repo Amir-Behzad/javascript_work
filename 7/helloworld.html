@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
-    <script src="./7-1.js"></script>
 </head>
+
 <body>
     <h1>Hello!</h1>
     <p id="paragraph-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat sint possimus, aperiam excepturi aut dolorum corrupti deleniti minima ab officiis, odio, sed animi natus. Iusto, tenetur vel? Veritatis, ducimus enim!</p>
 </body>
+<!-- This script cannot work when included in the head element. It should come after the target element to be able to find and modify the target element. -->
+<script src="7-1.js"></script>
 </html>

@@ -1,2 +1,2 @@
 let paragraph = document.getElementById('paragraph-1');
-paragraph.innerText = "Just changed the text!";
+paragraph.innerText = "7-1.js changed the text!";
