@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    background-color: black;
+    color: antiquewhite;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+blockquote {
+    color: rgb(80, 80, 189);
+}
+
+p #paragraph-1 {
+    font-weight: 600;
+}
+
+#paragraph-1 {
+    color: red;
+}
