@@ -1,0 +1,1 @@
+quote = document.querySelectorAll('#quote');
