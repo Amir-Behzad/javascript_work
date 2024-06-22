@@ -6,3 +6,4 @@ wordList.addEventListener("click", (event) => {
     sentence.textContent += word;
     sentence.textContent += " ";
 });
+sentence.textContent += ".";
