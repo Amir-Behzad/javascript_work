@@ -1,9 +1,11 @@
 let wordList = document.querySelector("#word-list");
 let sentence = document.querySelector("#sentence");
-
+let len = 0;
 wordList.addEventListener("click", (event) => {
     let word = event.target.textContent;
     sentence.textContent += word;
     sentence.textContent += " ";
+    // console.log(event.currentTarget.id);
 });
-sentence.textContent += ".";
+
+// TODO add a period at the end of sentence.
