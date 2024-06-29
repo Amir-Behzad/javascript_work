@@ -1,6 +1,6 @@
 let wordList = document.querySelector("#word-list");
 let sentence = document.querySelector("#sentence");
-let len = 0;
+
 wordList.addEventListener("click", (event) => {
     let word = event.target.textContent;
     sentence.textContent += word;
