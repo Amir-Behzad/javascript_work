@@ -9,7 +9,7 @@ document.querySelector("html").addEventListener("keydown", (e) => {
     } else if (e.key == "a") {
         currentX -= 5;
     } else if (e.key == "s") {
-        currentY -= 5;
+        currentY += 5;
     } else if (e.key == "d") {
         currentX += 5;
     }
