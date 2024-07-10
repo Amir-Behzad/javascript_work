@@ -1,7 +1,17 @@
 let canvas = document.querySelector("#canvas");
 let ctx = canvas.getContext("2d");
-ctx.fillStyel = "blue";
-ctx.fillRect(10, 10, 200, 100);
-let ctx2 = canvas.getcontext('2d');
-ctx2.fillStyel = "red";
-ctx2.fillRect(15, 15, 100, 50);
+ctx.lineWidth = 10;
+ctx.fillStyel = "red";
+// Wall
+ctx.strokeRect(75, 140, 150, 110);
+
+// Door
+ctx.fillRect(130, 190, 40, 60);
+
+// Roof
+ctx.beginPath();
+ctx.moveTo(50, 140);
+ctx.lineTo(150, 60);
+ctx.lineTo(250, 140);
+ctx.closePath();
+ctx.stroke();
