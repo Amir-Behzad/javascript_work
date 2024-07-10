@@ -15,3 +15,7 @@ ctx.lineTo(150, 60);
 ctx.lineTo(250, 140);
 ctx.closePath();
 ctx.stroke();
+
+document.querySelector('html').addEventListener("mousemove", e => {
+    console.log(`mousemove x: ${e.clientX}, y: ${e.clientY}`);
+})
