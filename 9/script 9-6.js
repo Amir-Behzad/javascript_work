@@ -10,13 +10,15 @@ let y = 0;
 function drawCircle(x, y) {
   ctx.fillStyle = "red";
   ctx.beginPath();
-  ctx.arc((x % width), (y % height), 10, 0, Math.PI * 2, false);
+  ctx.arc(x, y, 10, 0, Math.PI * 2, false);
   ctx.fill();
 }
 
 function update() {
   x += 1;
   y += 1;
+  x %= width;
+  y %= height;
 }
 
 function draw() {
