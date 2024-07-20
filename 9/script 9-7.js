@@ -9,6 +9,7 @@ let width = canvas.width;
 let height = canvas.height;
 
 let x = 0;
+let forwards = true;
 
 function drawCircle(x) {
   ctx.fillStyle = "red";
@@ -18,9 +19,9 @@ function drawCircle(x) {
 }
 
 function update() {
-  x += 1;
-  // if x
-  
+  while(count < width) {
+
+  }
 }
 
 function draw() {
