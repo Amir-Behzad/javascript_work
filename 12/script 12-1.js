@@ -4,6 +4,11 @@
 
 let play = document.querySelector("#play");
 let playing = document.querySelector("#playing");
+let volume = document.querySelector("#gain");
+
+volume.addEventListener("change", e => {
+  volume = e.target.value;
+});
 
 play.addEventListener("click", () => {
   play.style = "display: none";
@@ -14,11 +19,13 @@ play.addEventListener("click", () => {
   oscNode.frequency.value = 440;
 
   let gainNode = audioCtx.createGain();
-  gainNode.gain.value = 0.5;
+  gainNode.gain.value = volume;
 
   oscNode.connect(gainNode);
   gainNode.connect(audioCtx.destination);
 
   oscNode.start(audioCtx.currentTime);
   oscNode.stop(audioCtx.currentTime + 2);
+
+  
 });
