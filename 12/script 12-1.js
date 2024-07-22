@@ -6,9 +6,6 @@ let play = document.querySelector("#play");
 let playing = document.querySelector("#playing");
 let volume = document.querySelector("#gain");
 
-volume.addEventListener("change", e => {
-  volume = e.target.value;
-});
 
 play.addEventListener("click", () => {
   play.style = "display: none";
@@ -28,4 +25,8 @@ play.addEventListener("click", () => {
   oscNode.stop(audioCtx.currentTime + 2);
 
   
+});
+
+volume.addEventListener("change", e => {
+  volume = e.target.value;
 });
